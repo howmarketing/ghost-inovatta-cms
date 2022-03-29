@@ -1,0 +1,66 @@
+{
+    "name": "Log",
+    "hostname": "MacBook-Pro-de-Gabriel.local",
+    "pid": 48536,
+    "level": 50,
+    "req": {
+        "meta": {
+            "requestId": "0b73b841-bf20-4e24-b706-29ef3185f71b",
+            "userId": null
+        },
+        "url": "/users/me/?include=roles",
+        "method": "GET",
+        "originalUrl": "/ghost/api/admin/users/me/?include=roles",
+        "params": {},
+        "headers": {
+            "host": "localhost:2368",
+            "connection": "keep-alive",
+            "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"",
+            "sec-ch-ua-mobile": "?0",
+            "app-pragma": "no-cache",
+            "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36",
+            "content-type": "application/json; charset=UTF-8",
+            "accept": "application/json, text/javascript, */*; q=0.01",
+            "x-requested-with": "XMLHttpRequest",
+            "accept-version": "v4",
+            "x-ghost-version": "4.41",
+            "sec-ch-ua-platform": "\"macOS\"",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://localhost:2368/ghost/",
+            "accept-encoding": "gzip, deflate, br",
+            "accept-language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"
+        },
+        "query": {
+            "include": "roles"
+        }
+    },
+    "res": {
+        "_headers": {
+            "x-powered-by": "Express",
+            "cache-control": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0",
+            "content-type": "application/json; charset=utf-8",
+            "content-length": "321",
+            "etag": "W/\"141-GlCuGYeFWdl3OOanjc/3Q/nJlcw\"",
+            "vary": "Accept-Encoding"
+        },
+        "statusCode": 403,
+        "responseTime": "185ms"
+    },
+    "err": {
+        "id": "f52cf220-af0a-11ec-ada2-17b9a7ecca82",
+        "domain": "http://localhost:2368/",
+        "code": null,
+        "name": "NoPermissionError",
+        "statusCode": 403,
+        "level": "normal",
+        "message": "Authorization failed",
+        "context": "\"Unable to determine the authenticated user or integration. Check that cookies are being passed through if using session authentication.\"",
+        "stack": "NoPermissionError: Authorization failed\n    at authorizeAdminApi (/Users/gabrielariza/Documents/projetos/CMS/ghostcms_1/versions/4.41.3/core/server/services/auth/authorize.js:33:25)\n    at Layer.handle [as handle_request] (/Users/gabrielariza/Documents/projetos/CMS/ghostcms_1/versions/4.41.3/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/gabrielariza/Documents/projetos/CMS/ghostcms_1/versions/4.41.3/node_modules/express/lib/router/route.js:137:13)\n    at authenticate (/Users/gabrielariza/Documents/projetos/CMS/ghostcms_1/versions/4.41.3/core/server/services/auth/session/middleware.js:28:13)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+        "hideStack": false
+    },
+    "msg": "Authorization failed",
+    "time": "2022-03-29T02:50:13.957Z",
+    "v": 0
+}
